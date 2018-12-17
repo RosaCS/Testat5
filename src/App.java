@@ -6,8 +6,8 @@ public class App {
 	public static void main(String args[]) throws IOException {
 		
 		//Paths to the files we want to read and save our encryption
-		String readpath = "C:/Users/admin/Desktop/read.txt";
-		String encryptedDataFile = "C:/Users/admin/Desktop/encrypted.txt";
+		String readpath = "read.txt";
+		String encryptedDataFile = "encrypted.txt";
 
 		//Create FileIO 
 		FileIO file = new FileIO();
@@ -32,7 +32,9 @@ public class App {
 			int k1 = x%20;
 			//create k2
 			int k2 = x/20;
-			System.out.println("k1: "+k1 + " k2: "+ k2);
+			////////////////////////////////
+			//System.out.println("k1: "+k1 + " k2: "+ k2);
+			////////////////////////////////
 			//encrypted k1 into c
 			int encryptedk1 = rsa.encrypt(k1);
 			//encryted k2 into c
